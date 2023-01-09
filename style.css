@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Press+Start+2P&display=swap');
 
 * {
     box-sizing: border-box;
@@ -6,16 +6,30 @@
 }
 
 body {
-    font-family: Montserrat;
+    font-family: 'Press Start 2P', cursive;
     margin: 0;
     display: flex;
-    flex-direction: column;
-        /* aligns all elements on the page vertically */
     align-items: center;
         /* centers the column in the middle of page */
     justify-content:center;
     height: 100vh;
     overflow:hidden;
         /* hides scroll bars */
+}
+
+.bg {
+    background: url('https://www.cnet.com/a/img/resize/3491fe331e64578fb656f18ac80a956206df65fd/hub/2022/10/19/b5925c18-5f1f-48d7-aa47-b5091a5670d6/stsci-01gf49bhzj1wx8w803281hrbcw.jpg?auto=webp&fit=crop&height=675&width=1200') no-repeat center center/cover;
+    position: absolute;
+    top: -30;
+    left: -30;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    z-index: -1;
+    filter: blur(0px)
+}
+
+.loading-text {
+    font-size: 50px;
+    color: white;
 }
 
